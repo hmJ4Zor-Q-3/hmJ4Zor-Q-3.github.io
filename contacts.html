@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Contact us page
+    </title>
+    <meta name="Keywords" content="contacts">
+    <meta name="Description" content="The contacts page for the entire website.">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="header_div">
+        <nav>
+            <p>
+                <a class="buttons" href="index.html">Home</a>
+            </p>
+        </nav>
+    </div>
+
+    <div class="page_specific_content_the_div">
+        <h3 class="subsection_title_center_and_center_aligned_text">
+            Contacts
+        </h3>
+        <p class="subsection_body_center_and_center_aligned_text">
+            A contact form's provided below. You're welcome to use them to ask any questions, report any issues or
+            errors or bugs or anything the like, or provide feedback.
+            <br />
+            <br /> Please do not message repeatedly for the same thing in a short period, please give it at least a week
+            for response<!--time period subject to adjustment-->. Any messages that're containing harassment, any hate
+            speech, any sexual objectification, or malicious content, will not be responded to, and will possibly merit
+            a perminent block.
+        </p>
+
+        <!-- <h3 class="subsection_title_center">
+                Email
+            </h3>
+            <p class="subsection_body_center">
+                At the moment I'm not actually providing and email for personal and technical reasons, one should be avilable eventually, or this should be removed and an alternatuve method added in it's stead.
+            </p> -->
+
+        <form id="contactForm">
+            <div class="fieldset_left">
+                <fieldset id="userInformation">
+                    <legend>
+                        User contacting information
+                    </legend>
+
+                    <!--name-->
+                    <div class="form_member">
+                        <label for="nameField">
+                            Name:
+                        </label>
+                        <br>
+                        <input name="nameField" id="nameField" type="text" accesskey="n" tabindex="1">
+                    </div>
+
+                    <!--pronouns-->
+                    <div class="form_member">
+                        <label for="pronounsField">
+                            Pronouns:
+                        </label>
+                        <br>
+                        <input name="pronounsField" id="pronounsField" type="text" accesskey="p" tabindex="2">
+                    </div>
+
+                    <!--email-->
+                    <div class="form_member">
+                        <label for="emailField">
+                            Email:
+                        </label>
+                        <br>
+                        <input name="emailField" id="emailField" type="text" required accesskey="e" tabindex="3">
+                    </div>
+                </fieldset>
+            </div>
+
+            <!--return-->
+            <div class="fieldset_right">
+                <fieldset id="userMessage">
+                    <legend>
+                        Message
+                    </legend>
+
+                    <!--message-->
+                    <div class="form_member">
+                        <label for="messageField">
+                            Message:
+                        </label>
+                        <br>
+                        <!-- <input name="messageField" id="messageField" type="text" required accesskey="m" tabindex="4"> -->
+                        <textarea class="message_area" name="messageField" id="messageField" required accesskey="m"
+                            tabindex="4"></textarea>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="subsection_body_center_and_center_aligned_text">
+                <input value="Submit" type="submit">
+            </div>
+        </form>
+    </div>
+
+    <div class="footer_div">
+        <p>
+            .
+        </p>
+    </div>
+</body>
+
+</html>

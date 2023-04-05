@@ -1,0 +1,500 @@
+/* CSS Document */
+
+:root
+{
+    /*now it feels too dark*/
+    --text-color-variable: #878787FF;/*#FFFFFFFF;*/
+    
+    --the-body-background-color-variable: #323232FF;/*#D9D9D9FF;*/
+    --page-sections-background-color-variable: #2E2E2EFF;/*#A6A6A6FF;*/
+
+
+
+    --link-standard-color: #22AAFFFF;/*rgb(175, 175, 255);*//*var(--text-color-variable);*/
+    
+    --link-visited-color: #AAAAFFFF; /*#AAAAAAFF;*/
+    
+    --link-button-hovered-background-color: #565656FF;/*#067676FF;*/
+    --link-button-hovered-text-color: #000000FF;/*#000056FF;*/
+    --link-button-hovered-decoration-color: #222222FF;
+    
+    
+    
+    --button-background-image-padding-value-the-top: 4px;
+    --button-background-image-padding-value-the-bottom: 4px;
+    --button-background-image-padding-value-the-left: 12px;
+    --button-background-image-padding-value-the-right: 12px;
+
+    --page-specific-content-margins-sides-for-global: 2%;
+    --page-specific-content-margins-verticles-for-global: 12px;
+    --page-specific-content-border-radius-for-global: 1%;
+    
+    --page-specific-content-margins-sides-for-greater-than-480px: 6%;
+    --page-specific-content-margins-verticles-for-greater-than-480px: 48px;
+    
+    --page-specific-content-paddings-verticles: 6px;
+    
+    --page-specific-content-text-margins-the-sides: 2%;
+
+    
+    --form-member-margins-the-sides: 2%;
+    --form-member-margins-the-verticles: 6px;
+    --double-fieldset-intended-both-width: 48%;
+}
+
+
+
+body
+{
+    background-color: var(--the-body-background-color-variable, #D9D9D9FF);
+    
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*
+    margin-top: 72px;
+    margin-right: 6%;
+    margin-bottom: 154px;
+    margin-left: 6%;
+    */
+}
+
+.header_div
+{
+    color: var(--text-color-variable, white);
+    
+    background-color: var(--page-sections-background-color-variable, #A6A6A6FF);
+    text-align: center;
+    
+    padding-top: 1px;
+    padding-bottom: 1px;
+    
+    margin-left: 0%;
+    margin-right: 0%;
+    
+}
+
+.page_specific_content_the_div
+{
+    color: var(--text-color-variable, white);
+    
+    background-color: var(--page-sections-background-color-variable, #A6A6A6FF);
+    
+    margin-top: var(--page-specific-content-margins-verticles-for-global, 12px);
+    margin-bottom: var(--page-specific-content-margins-verticles-for-global, 12px);
+
+    /*/**/
+    margin-left: var(--page-specific-content-margins-sides-for-global, 1%);
+    margin-right: var(--page-specific-content-margins-sides-for-global, 1%);
+    /**/
+    
+    padding-top: var(--page-specific-content-paddings-verticles, 6px);
+    padding-bottom: var(--page-specific-content-paddings-verticles, 6px);
+
+    border-radius: var(--page-specific-content-border-radius-for-global, 1%);
+
+    /*box-shadow: #000000FF;*/
+}
+
+.footer_div
+{
+    color: var(--text-color-variable, white);
+    
+    background-color: var(--page-sections-background-color-variable, #A6A6A6FF);
+    text-align: center;    
+    
+    padding-top: 1px;
+    padding-bottom: 1px;
+    
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+
+
+.buttons
+{
+    /*background-image: url(assets/button_background.png);*/
+    background-color: var(--the-body-background-color-variable);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: padding-box;
+    
+    text-transform: none;
+    
+    padding-top: var(--button-background-image-padding-value-the-top);
+    padding-bottom: var(--button-background-image-padding-value-the-bottom);
+    padding-left: var(--button-background-image-padding-value-the-left);
+    padding-right: var(--button-background-image-padding-value-the-right);
+}
+
+
+
+/*
+.internal-link-stylization
+{
+    text-emphasis-color: red;
+    font-style: oblique;    
+}
+*/
+
+a:link
+{
+ color: var(--link-standard-color);
+}
+
+a:visited
+{
+    color: var(--link-visited-color);
+}
+
+a:hover
+{
+    color: var(--link-button-hovered-text-color);
+    text-decoration: underline;
+    text-decoration-color: var(--link-button-hovered-decoration-color);
+    background-color: var(--link-button-hovered-background-color);
+}
+
+
+
+/*clarify the meaning of center here as it isn't currnetly the text alignment*/
+.subsection_title_center
+{
+    color: var(--text-color-variable, white);
+    
+    text-align: left;
+    margin-left: var(--page-specific-content-text-margins-the-sides, 2%);
+    margin-right: var(--page-specific-content-text-margins-the-sides, 2%);
+}
+
+.subsection_title_center_and_center_aligned_text
+{
+    color: var(--text-color-variable, white);
+    
+    text-align: center;
+    margin-left: var(--page-specific-content-text-margins-the-sides, 2%);
+    margin-right: var(--page-specific-content-text-margins-the-sides, 2%);
+}
+
+.subsection_title_right
+{
+    color: var(--text-color-variable, white);
+    
+    text-align: left;
+    margin-left: var(--page-specific-content-text-margins-the-sides, 2%);
+    margin-right: var(--page-specific-content-text-margins-the-sides, 2%);
+}
+
+.subsection_title_left
+{
+    color: var(--text-color-variable, white);
+    
+    text-align: left;
+    margin-left: var(--page-specific-content-text-margins-the-sides, 2%);
+    margin-right: var(--page-specific-content-text-margins-the-sides, 2%);
+}
+
+
+
+.subsection_body_center
+{
+    color: var(--text-color-variable, white);
+    
+    text-align: left;
+    margin-right: var(--page-specific-content-text-margins-the-sides, 2%);
+    margin-left: var(--page-specific-content-text-margins-the-sides, 2%);    
+}
+
+.subsection_body_center_and_center_aligned_text
+{
+    color: var(--text-color-variable, white);
+    
+    text-align: center;
+    margin-right: var(--page-specific-content-text-margins-the-sides, 2%);
+    margin-left: var(--page-specific-content-text-margins-the-sides, 2%);    
+}
+
+.subsection_body_left
+{
+    color: var(--text-color-variable, white);
+    
+    text-align: left;
+    margin-right: var(--page-specific-content-text-margins-the-sides, 2%);
+    margin-left: var(--page-specific-content-text-margins-the-sides, 2%);
+    
+}
+
+.subsection_body_right
+{
+    color: var(--text-color-variable, white);
+    
+    text-align: left;
+    margin-right: var(--page-specific-content-text-margins-the-sides, 2%);
+    margin-left: var(--page-specific-content-text-margins-the-sides, 2%);
+}
+
+
+
+/*
+.subsection_image_center
+{
+    color: var(--text-color-variable, white);
+    
+    width: calc(100% - calc(2% + 2%));
+    height: 100%;
+    
+    margin-right: 2%;
+    margin-left: 2%;
+}
+*/
+
+
+
+.subsection_image_float_to_none
+{
+    color: var(--text-color-variable, white);    
+    
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+    width: calc(100% - calc(2% + 2%));
+    height: 100%;
+    
+    object-position: center;
+    
+    float: none;
+}
+
+.subsection_image_float_to_right
+{
+    color: var(--text-color-variable, white);    
+    
+    margin-right: 2%;
+    margin-left: 2%;
+    
+    width: calc(100% - calc(2% + 2%));
+    height: 100%;
+    
+    object-position: center;
+    
+    float: none;
+}
+
+
+
+.form_member
+{
+    margin-top: var(--form-member-margins-the-verticles, 2px);
+    margin-bottom: var(--form-member-margins-the-verticles, 2px);
+
+    margin-right: var(--form-member-margins-the-sides, 2%);
+    margin-left: var(--form-member-margins-the-sides, 2%);
+
+    width: 96%;
+}
+
+.fieldset_left
+{
+    margin-top: var(--form-member-margins-the-verticles, 2px);
+    margin-bottom: var(--form-member-margins-the-verticles, 2px);
+
+    margin-right: var(--form-member-margins-the-sides, 2%);
+    margin-left: var(--form-member-margins-the-sides, 2%);
+}
+.fieldset_right
+{
+    margin-top: var(--form-member-margins-the-verticles, 2px);
+    margin-bottom: var(--form-member-margins-the-verticles, 2px);
+
+    margin-right: var(--form-member-margins-the-sides, 2%);
+    margin-left: var(--form-member-margins-the-sides, 2%);
+}
+
+.message_area
+{
+    margin-top: var(--form-member-margins-the-verticles, 2px);
+    margin-bottom: var(--form-member-margins-the-verticles, 2px);
+/* 
+    margin-right: var(--form-member-margins-the-sides, 2%);
+    margin-left: var(--form-member-margins-the-sides, 2%); */
+
+    width: 100%;
+
+    height: 128px;
+}
+
+/* .submit_centered_button
+{
+    position: ;
+} */
+
+/*greater than 480px sized screen media query*/
+@media only screen and (min-width: 481px)
+{
+    
+    /* 
+    body
+    {
+
+    } 
+    */
+
+    /* 
+    .header_div
+    {
+
+    } 
+    */
+
+    /* 
+    .footer_div
+    {
+
+    } 
+    */
+
+    .page_specific_content_the_div
+    {
+        margin-top: var(--page-specific-content-margins-verticles-for-greater-than-480px, 48px);
+        margin-bottom: var(--page-specific-content-margins-verticles-for-greater-than-480px, 48px);
+
+        /*on largerer screens add a margin on the sides*/
+        margin-left: var(--page-specific-content-margins-sides-for-greater-than-480px, 6%);
+        margin-right: var(--page-specific-content-margins-sides-for-greater-than-480px, 6%);
+
+        /*
+        padding-top: var(--page-specific-content-paddings-verticles, 6px);
+        padding-bottom: var(--page-specific-content-paddings-verticles, 6px);
+        */
+
+        /*
+        background-color: var(--other-sections-background-color-variable, #A6A6A6FF);
+        */
+    }
+
+
+
+    /* 
+    .buttons
+    {
+
+    } 
+    */
+    
+    
+    
+    /*
+    .internal-link-stylization
+    {
+        text-emphasis-color: red;
+        font-style: oblique;    
+    }
+    */
+    
+    /* 
+    a:hover
+    {
+
+    } 
+    */
+
+    /*
+    .subsection_title_center
+    {
+
+    } 
+    */
+    
+    
+    
+    .subsection_title_right
+    {
+        text-align: right;
+        margin-left: 24%;
+    }
+
+    .subsection_title_left
+    {
+        text-align: left;
+        margin-right: 24%;
+    }
+
+
+
+    .subsection_body_left
+    {
+        text-align: left;
+        margin-right: 30%;
+
+    }
+
+    /*
+     .subsection_body_center
+    {
+        
+    } 
+    */
+
+    .subsection_body_right
+    {
+        text-align: right;
+        margin-left: 30%;
+    }
+
+    
+    
+    /*
+    .subsection_image_center
+    {
+        width: calc(100% - calc(2% + 2%));
+        height: 100%;
+    }
+    */
+
+    .subsection_image_float_to_right
+    {
+        width: 56%; /*calc(100% - calc(52% + 2%));*/
+        /*float: right;*/
+        
+        margin-left: 22%;
+        margin-right: 22%;
+        
+        object-fit: scale-down;
+    }    
+    
+
+    /* .fieldset_left
+    {*/
+        /*maybe add float like was with images test on and such and such*/
+        /*leftMarginWidth + desiredObjectWidth = desireObjectMarginForRight*/
+
+        /* margin-right: calc(calc(var(--double-fieldset-intended-both-width) + var(--form-member-margins-the-sides))); */
+        /* margin-left: var(--form-member-margins-the-sides, 2%);
+
+        width: var(--double-fieldset-intended-both-width);
+
+        float: none;
+    }
+
+    .fieldset_right
+    { */
+        /*(100% - (rightMarginWidth + desiredObjectWidth)) = desireObjectMarginForLeft*/
+        /* margin-right: var(--form-member-margins-the-sides, 2%); */
+        /*margin-left: calc(100% - calc(var(--double-fieldset-intended-both-width) + var(--form-member-margins-the-sides)));*/
+/* 
+        width: var(--double-fieldset-intended-both-width);
+    } 
+     */
+}/*greater than 480px media query end brace*/
+
+@media only screen and (min-width: 769p)
+{
+    
+    
+    
+}
